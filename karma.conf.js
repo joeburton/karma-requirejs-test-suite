@@ -1,6 +1,3 @@
-// Karma configuration
-// Generated on Sun Oct 20 2013 07:28:56 GMT+0200 (CEST)
-
 module.exports = function(config) {
   config.set({
 
@@ -68,6 +65,7 @@ module.exports = function(config) {
     // Continuous Integration mode
     // if true, it capture browsers, run tests and exit
     singleRun: false,
+
 
     plugins: [
       'karma-jasmine',
