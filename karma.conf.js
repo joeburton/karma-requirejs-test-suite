@@ -12,7 +12,7 @@ module.exports = function(config) {
     // list of files / patterns to load in the browser
     files: [
         {pattern: 'lib/**/*.js', included: false},
-        {pattern: 'src/**/*.js', included: false},
+        {pattern: 'js/**/*.js', included: false},
         {pattern: 'test/**/*Spec.js', included: false},
 
         'test/test-main.js',
@@ -21,13 +21,13 @@ module.exports = function(config) {
 
     // list of files to exclude
     exclude: [
-        'src/main.js'
+        'js/main.js'
     ],
 
 
     // test results reporter to use
     // possible values: 'dots', 'progress', 'junit', 'growl', 'coverage'
-    reporters: ['mocha'],
+    reporters: ['mocha', 'html'],
 
 
     // web server port
@@ -71,7 +71,8 @@ module.exports = function(config) {
       'karma-jasmine',
       'karma-mocha-reporter',
       'karma-requirejs',
-      'karma-chrome-launcher'
+      'karma-chrome-launcher',
+      'karma-jasmine-html-reporter'
     ]
 
   });
